@@ -44,13 +44,13 @@ const Projects = () => {
     {
       title: 'Durham Water Reclamation Facility',
       client: 'City of Durham',
-      description: 'Providing transportation and land application services for the Durham Water Reclamation Facility's biosolids program.',
+      description: "Providing transportation and land application services for the Durham Water Reclamation Facility's biosolids program.",
       imageUrl: 'https://images.unsplash.com/photo-1555268368-4719f3da3e76?auto=format&fit=crop&w=800&q=80'
     },
     {
       title: 'Greensboro Dewatering Project',
       client: 'City of Greensboro',
-      description: 'Implementation of mobile dewatering solutions for the City of Greensboro's wastewater treatment facilities.',
+      description: "Implementation of mobile dewatering solutions for the City of Greensboro's wastewater treatment facilities.",
       imageUrl: 'https://images.unsplash.com/photo-1574169408758-fca8a8c99cdd?auto=format&fit=crop&w=800&q=80'
     },
     {
