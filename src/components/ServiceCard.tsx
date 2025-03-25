@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 interface ServiceCardProps {
@@ -14,6 +13,7 @@ interface ServiceCardProps {
   imagePosition?: string;
   link?: string;
   className?: string;
+  showLearnMore?: boolean;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -26,6 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   imagePosition,
   link = '/services',
   className,
+  showLearnMore = false,
 }) => {
   return (
     <div 
@@ -59,13 +60,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           </ul>
         )}
         
-        <Link 
-          to={link} 
-          className="inline-flex items-center text-gf-green hover:text-gf-green/80 font-medium group/link"
-        >
-          Learn More 
-          <ArrowRight size={16} className="ml-2 transition-transform duration-200 group-hover/link:translate-x-1" />
-        </Link>
+        {showLearnMore && (
+          <a 
+            href={link} 
+            className="inline-flex items-center text-gf-green hover:text-gf-green/80 font-medium group/link"
+          >
+            Learn More 
+            <ArrowRight size={16} className="ml-2 transition-transform duration-200 group-hover/link:translate-x-1" />
+          </a>
+        )}
       </div>
     </div>
   );

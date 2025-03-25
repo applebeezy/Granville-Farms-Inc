@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -10,6 +10,7 @@ const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +34,17 @@ const Navbar = () => {
   const toggleServices = () => setServicesOpen(!servicesOpen);
   const toggleAbout = () => setAboutOpen(!aboutOpen);
 
+  // Function to handle navigation with reload effect
+  const handleNavigation = (path) => {
+    if (location.pathname === path) {
+      // Force a reload of the current page
+      navigate(0);
+    } else {
+      // Navigate to the new path
+      navigate(path);
+    }
+  };
+
   const navbarClasses = cn(
     'fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300',
     isScrolled ? 'bg-white shadow-md py-2' : 'py-4 bg-transparent',
@@ -46,13 +58,17 @@ const Navbar = () => {
     <header className={navbarClasses}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link 
-            to="/" 
+          <button 
+            onClick={() => handleNavigation('/')} 
             className="relative z-10 flex items-center font-bold text-xl md:text-2xl text-gf-dark"
             aria-label="Granville Farms Inc."
           >
-            Granville Farms Inc.
-          </Link>
+            <img 
+              src="/lovable-uploads/a612384a-0217-4737-be02-da6373513052.png" 
+              alt="Granville Farms Logo" 
+              className="h-12 w-auto"
+            />
+          </button>
 
           {/* Mobile menu button */}
           <button 
@@ -65,12 +81,12 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/" 
+            <button 
+              onClick={() => handleNavigation('/')} 
               className={cn(linkClasses, location.pathname === '/' && activeLinkClasses)}
             >
               Home
-            </Link>
+            </button>
             
             <div className="relative group">
               <button 
@@ -132,15 +148,15 @@ const Navbar = () => {
               
               <div className="absolute left-0 top-full mt-2 w-48 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-200 z-50">
                 <div className="py-1">
-                  <Link to="/about" className="block px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
+                  <button onClick={() => handleNavigation('/about')} className="block w-full text-left px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
                     About Us
-                  </Link>
-                  <Link to="/team" className="block px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
+                  </button>
+                  <button onClick={() => handleNavigation('/team')} className="block w-full text-left px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
                     Our Team
-                  </Link>
-                  <Link to="/projects" className="block px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
+                  </button>
+                  <button onClick={() => handleNavigation('/projects')} className="block w-full text-left px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
                     Past Projects
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -155,15 +171,15 @@ const Navbar = () => {
           )}
         >
           <nav className="flex flex-col space-y-4 pb-6 animate-fade-in">
-            <Link 
-              to="/" 
+            <button
+              onClick={() => handleNavigation('/')} 
               className={cn(
-                "py-2 px-2 text-gf-dark hover:text-gf-green",
+                "py-2 px-2 text-left text-gf-dark hover:text-gf-green",
                 location.pathname === '/' && "font-medium text-gf-green"
               )}
             >
               Home
-            </Link>
+            </button>
             
             <div>
               <button 
@@ -227,15 +243,15 @@ const Navbar = () => {
                 "overflow-hidden transition-all duration-200 pl-4 space-y-2",
                 aboutOpen ? "max-h-40 mt-2" : "max-h-0"
               )}>
-                <Link to="/about" className="block py-1 text-gf-dark hover:text-gf-green">
+                <button onClick={() => handleNavigation('/about')} className="block w-full text-left py-1 text-gf-dark hover:text-gf-green">
                   About Us
-                </Link>
-                <Link to="/team" className="block py-1 text-gf-dark hover:text-gf-green">
+                </button>
+                <button onClick={() => handleNavigation('/team')} className="block w-full text-left py-1 text-gf-dark hover:text-gf-green">
                   Our Team
-                </Link>
-                <Link to="/projects" className="block py-1 text-gf-dark hover:text-gf-green">
+                </button>
+                <button onClick={() => handleNavigation('/projects')} className="block w-full text-left py-1 text-gf-dark hover:text-gf-green">
                   Past Projects
-                </Link>
+                </button>
               </div>
             </div>
           </nav>

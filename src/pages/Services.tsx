@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
+import React, { useEffect, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -8,9 +9,35 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Truck, Droplet, Trash2, FileText, Cylinder, Sprout, Shovel } from 'lucide-react';
 
 const Services = () => {
+  const location = useLocation();
+  const servicesRef = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    
+    // Check if there's a hash in the URL (e.g., #transportation)
+    if (location.hash) {
+      // Remove the # character
+      const id = location.hash.substring(1);
+      
+      // Get the element with that ID
+      const element = servicesRef.current[id];
+      
+      // If the element exists, scroll to it with a slight delay to ensure DOM is ready
+      if (element) {
+        setTimeout(() => {
+          const headerOffset = 100;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }, 300);
+      }
+    }
+  }, [location.hash]);
 
   const services = [
     {
@@ -136,16 +163,19 @@ const Services = () => {
           
           <div className="space-y-16 md:space-y-24">
             {services.map((service, index) => (
-              <ServiceCard
-                key={service.id}
-                id={service.id}
-                title={service.title}
-                description={service.description}
-                benefits={service.benefits}
-                icon={service.icon}
-                link={`/services#${service.id}`}
-                className="animate-fade-in-up"
-              />
+              <div 
+                key={service.id} 
+                ref={el => servicesRef.current[service.id] = el}
+              >
+                <ServiceCard
+                  id={service.id}
+                  title={service.title}
+                  description={service.description}
+                  benefits={service.benefits}
+                  icon={service.icon}
+                  className="animate-fade-in-up"
+                />
+              </div>
             ))}
           </div>
         </div>
