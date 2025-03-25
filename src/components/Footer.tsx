@@ -33,8 +33,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-gf-green" />
-                <a href="mailto:info@granvillefarmsinc.com" className="text-gray-300 hover:text-white transition-colors">
-                  info@granvillefarmsinc.com
+                <a href="mailto:granvillefarmsinc@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                  granvillefarmsinc@gmail.com
                 </a>
               </div>
             </div>
@@ -73,6 +73,12 @@ const Footer = () => {
                   <ChevronRight size={14} className="text-gf-green" />
                   Past Projects
                 </Link>
+              </li>
+              <li>
+                <a href="mailto:granvillefarmsinc@gmail.com" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                  <ChevronRight size={14} className="text-gf-green" />
+                  Contact Us
+                </a>
               </li>
             </ul>
           </div>

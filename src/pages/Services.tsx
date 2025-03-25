@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Hero from '@/components/Hero';
@@ -6,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Truck, Droplet, Trash2, FileText, Cylinder, Sprout, Shovel } from 'lucide-react';
+import { ArrowRight, Truck, Droplet, Trash2, FileText, Cylinder, Sprout } from 'lucide-react';
 
 const Services = () => {
   const location = useLocation();
@@ -117,19 +116,6 @@ const Services = () => {
       ],
       icon: <Sprout />,
       imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'
-    },
-    {
-      id: 'drainage',
-      title: 'Farm Drainage',
-      description: 'Specialized drainage solutions for agricultural lands to improve soil conditions and crop yields.',
-      benefits: [
-        'Improved field trafficability',
-        'Enhanced root development',
-        'Reduced soil compaction',
-        'Better nutrient utilization'
-      ],
-      icon: <Shovel />,
-      imageUrl: 'https://images.unsplash.com/photo-1535048637252-3a8c40fa2172?auto=format&fit=crop&w=800&q=80'
     }
   ];
 

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '@/components/Hero';
@@ -16,17 +15,17 @@ const Team = () => {
   const teamMembers = [
     {
       name: 'Andy Smith',
-      role: 'Co-Owner & CEO',
+      role: 'Co-Owner & President',
       bio: 'Andy Smith co-founded Granville Farms Inc. in 1988 and has led the company with a commitment to sustainable biosolids management practices. His expertise in agricultural applications and regulatory compliance has established the company as a leader in the industry.',
-      phone: '(919) 690-8000',
-      email: 'asmith@granvillefarmsinc.com'
+      phone: '(919) 603-4799',
+      email: 'granvillefarmsinc@gmail.com'
     },
     {
       name: 'Jason Smith',
-      role: 'Co-Owner & COO',
+      role: 'Co-Owner & Vice-President',
       bio: 'Jason Smith has worked alongside his brother since the founding of Granville Farms Inc. His focus on operational excellence and innovative solutions has helped the company develop industry-leading biosolids management techniques and expand services throughout North Carolina.',
       phone: '(252) 903-5367',
-      email: 'jsmith@granvillefarmsinc.com'
+      email: 'granvillefarmsinc@gmail.com'
     }
   ];
 

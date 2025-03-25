@@ -124,9 +124,6 @@ const Navbar = () => {
                   <Link to="/services#application" className="block px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
                     Land Application
                   </Link>
-                  <Link to="/services#drainage" className="block px-4 py-2 text-sm text-gf-dark hover:bg-gf-gray">
-                    Farm Drainage
-                  </Link>
                 </div>
               </div>
             </div>
@@ -217,9 +214,6 @@ const Navbar = () => {
                 </Link>
                 <Link to="/services#application" className="block py-1 text-gf-dark hover:text-gf-green">
                   Land Application
-                </Link>
-                <Link to="/services#drainage" className="block py-1 text-gf-dark hover:text-gf-green">
-                  Farm Drainage
                 </Link>
               </div>
             </div>

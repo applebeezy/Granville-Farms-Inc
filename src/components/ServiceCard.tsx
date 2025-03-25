@@ -59,16 +59,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             ))}
           </ul>
         )}
-        
-        {showLearnMore && (
-          <a 
-            href={link} 
-            className="inline-flex items-center text-gf-green hover:text-gf-green/80 font-medium group/link"
-          >
-            Learn More 
-            <ArrowRight size={16} className="ml-2 transition-transform duration-200 group-hover/link:translate-x-1" />
-          </a>
-        )}
       </div>
     </div>
   );
