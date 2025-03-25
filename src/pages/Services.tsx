@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '@/components/Hero';
@@ -6,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Truck, Droplet, Trash2, FileText, Cylinder, Sprout, Shovel } from 'lucide-react';
 
 const Services = () => {
   useEffect(() => {
@@ -24,6 +23,7 @@ const Services = () => {
         'Flexible scheduling for your operational needs',
         'Trained and certified transportation staff'
       ],
+      icon: <Truck />,
       imageUrl: 'https://images.unsplash.com/photo-1568093862696-5f59b671ad89?auto=format&fit=crop&w=800&q=80'
     },
     {
@@ -36,6 +36,7 @@ const Services = () => {
         'Customized dewatering solutions for your specific needs',
         'Increased solids content for easier handling'
       ],
+      icon: <Droplet />,
       imageUrl: 'https://images.unsplash.com/photo-1586075579223-e2c4a250d18b?auto=format&fit=crop&w=800&q=80'
     },
     {
@@ -48,6 +49,7 @@ const Services = () => {
         'Reduced odor issues',
         'Regulatory compliance assistance'
       ],
+      icon: <Trash2 />,
       imageUrl: 'https://images.unsplash.com/photo-1593378026483-cf1291fada7f?auto=format&fit=crop&w=800&q=80'
     },
     {
@@ -60,6 +62,7 @@ const Services = () => {
         'Record-keeping and reporting services',
         'Regulatory agency coordination'
       ],
+      icon: <FileText />,
       imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80'
     },
     {
@@ -72,6 +75,7 @@ const Services = () => {
         'Reduced maintenance costs',
         'Minimal operational disruption'
       ],
+      icon: <Cylinder />,
       imageUrl: 'https://images.unsplash.com/photo-1515658323406-25d61c141a6e?auto=format&fit=crop&w=800&q=80'
     },
     {
@@ -84,6 +88,7 @@ const Services = () => {
         'Reduced need for chemical fertilizers',
         'Comprehensive site management'
       ],
+      icon: <Sprout />,
       imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'
     },
     {
@@ -96,6 +101,7 @@ const Services = () => {
         'Reduced soil compaction',
         'Better nutrient utilization'
       ],
+      icon: <Shovel />,
       imageUrl: 'https://images.unsplash.com/photo-1535048637252-3a8c40fa2172?auto=format&fit=crop&w=800&q=80'
     }
   ];
@@ -136,8 +142,9 @@ const Services = () => {
                 title={service.title}
                 description={service.description}
                 benefits={service.benefits}
-                imageUrl={service.imageUrl}
-                imagePosition={index % 2 === 0 ? 'right' : 'left'}
+                icon={service.icon}
+                link={`/services#${service.id}`}
+                className="animate-fade-in-up"
               />
             ))}
           </div>

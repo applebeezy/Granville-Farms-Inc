@@ -8,7 +8,10 @@ interface ServiceCardProps {
   id: string;
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
+  benefits?: string[];
+  imageUrl?: string;
+  imagePosition?: string;
   link?: string;
   className?: string;
 }
@@ -18,6 +21,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   icon,
+  benefits,
+  imageUrl,
+  imagePosition,
   link = '/services',
   className,
 }) => {
@@ -32,13 +38,26 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className="absolute -right-10 -top-10 w-24 h-24 bg-gf-green/10 rounded-full transition-transform duration-300 group-hover:scale-150"></div>
       
       <div className="relative z-10">
-        <div className="w-14 h-14 flex items-center justify-center bg-gf-green/10 text-gf-green rounded-lg mb-5">
-          {icon}
-        </div>
+        {icon && (
+          <div className="w-14 h-14 flex items-center justify-center bg-gf-green/10 text-gf-green rounded-lg mb-5">
+            {icon}
+          </div>
+        )}
         
         <h3 className="text-xl font-semibold mb-3">{title}</h3>
         
         <p className="text-gray-600 mb-5">{description}</p>
+        
+        {benefits && benefits.length > 0 && (
+          <ul className="space-y-2 mb-5">
+            {benefits.map((benefit, index) => (
+              <li key={index} className="flex items-start gap-2">
+                <ArrowRight size={16} className="text-gf-green shrink-0 mt-1" />
+                <span className="text-gray-600">{benefit}</span>
+              </li>
+            ))}
+          </ul>
+        )}
         
         <Link 
           to={link} 
