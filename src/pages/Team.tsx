@@ -19,16 +19,14 @@ const Team = () => {
       role: 'Co-Owner & CEO',
       bio: 'Andy Smith co-founded Granville Farms Inc. in 1988 and has led the company with a commitment to sustainable biosolids management practices. His expertise in agricultural applications and regulatory compliance has established the company as a leader in the industry.',
       phone: '(919) 690-8000',
-      email: 'asmith@granvillefarmsinc.com',
-      imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&h=600&q=80'
+      email: 'asmith@granvillefarmsinc.com'
     },
     {
       name: 'Jason Smith',
       role: 'Co-Owner & COO',
       bio: 'Jason Smith has worked alongside his brother since the founding of Granville Farms Inc. His focus on operational excellence and innovative solutions has helped the company develop industry-leading biosolids management techniques and expand services throughout North Carolina.',
       phone: '(252) 903-5367',
-      email: 'jsmith@granvillefarmsinc.com',
-      imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&h=600&q=80'
+      email: 'jsmith@granvillefarmsinc.com'
     }
   ];
 
@@ -69,7 +67,6 @@ const Team = () => {
                 bio={member.bio}
                 phone={member.phone}
                 email={member.email}
-                imageUrl={member.imageUrl}
                 className={`animate-fade-in-up delay-${index * 100}`}
               />
             ))}

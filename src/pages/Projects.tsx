@@ -44,26 +44,22 @@ const Projects = () => {
     {
       title: 'Durham Water Reclamation Facility',
       client: 'City of Durham',
-      description: "Providing transportation and land application services for the Durham Water Reclamation Facility's biosolids program.",
-      imageUrl: 'https://images.unsplash.com/photo-1555268368-4719f3da3e76?auto=format&fit=crop&w=800&q=80'
+      description: "Providing transportation and land application services for the Durham Water Reclamation Facility's biosolids program."
     },
     {
       title: 'Greensboro Dewatering Project',
       client: 'City of Greensboro',
-      description: "Implementation of mobile dewatering solutions for the City of Greensboro's wastewater treatment facilities.",
-      imageUrl: 'https://images.unsplash.com/photo-1574169408758-fca8a8c99cdd?auto=format&fit=crop&w=800&q=80'
+      description: "Implementation of mobile dewatering solutions for the City of Greensboro's wastewater treatment facilities."
     },
     {
       title: 'Wilson County Lagoon Cleaning',
       client: 'Wilson County',
-      description: 'Comprehensive cleaning and maintenance of wastewater treatment lagoons for Wilson County utilities.',
-      imageUrl: 'https://images.unsplash.com/photo-1621274147744-cfb5032179f4?auto=format&fit=crop&w=800&q=80'
+      description: 'Comprehensive cleaning and maintenance of wastewater treatment lagoons for Wilson County utilities.'
     },
     {
       title: 'Harnett County Agricultural Applications',
       client: 'Harnett County',
-      description: 'Land application of biosolids to enhance agricultural soil fertility across Harnett County farmlands.',
-      imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'
+      description: 'Land application of biosolids to enhance agricultural soil fertility across Harnett County farmlands.'
     }
   ];
 
@@ -79,7 +75,7 @@ const Projects = () => {
           buttonText="Contact Us"
           buttonLink="/team"
           imageUrl="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=2000&h=1000&q=80"
-          overlayOpacity="strong"
+          overlayOpacity="medium"
         />
       </section>
       
@@ -113,7 +109,7 @@ const Projects = () => {
       <section className="py-16 md:py-24 bg-gf-light">
         <div className="container mx-auto px-6 md:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 animate-fade-in-up">
+            <div className="lg:w-full animate-fade-in-up">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-gf-green text-white rounded-md mb-4">Case Study</span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">City of Raleigh Partnership</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -146,13 +142,6 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
-            <div className="lg:w-1/2 relative h-[400px] rounded-xl overflow-hidden shadow-xl animate-fade-in-up">
-              <img 
-                src="https://images.unsplash.com/photo-1594642328095-4a873acceda9?auto=format&fit=crop&w=800&h=600&q=80" 
-                alt="City of Raleigh Biosolids Management" 
-                className="h-full w-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -168,16 +157,13 @@ const Projects = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 md:gap-8">
             {additionalProjects.map((project, index) => (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                client={project.client}
-                description={project.description}
-                imageUrl={project.imageUrl}
-                className={`animate-fade-in-up delay-${index * 100}`}
-              />
+              <div key={project.title} className="border-b border-gray-200 pb-4 mb-4 last:border-b-0 last:mb-0 last:pb-0 animate-fade-in-up">
+                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <p className="text-sm text-gf-green mb-2">{project.client}</p>
+                <p className="text-gray-600">{project.description}</p>
+              </div>
             ))}
           </div>
         </div>

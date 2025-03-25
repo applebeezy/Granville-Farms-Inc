@@ -48,14 +48,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link 
             to="/" 
-            className="relative z-10 flex items-center"
+            className="relative z-10 flex items-center font-bold text-xl md:text-2xl text-gf-dark"
             aria-label="Granville Farms Inc."
           >
-            <img 
-              src="/lovable-uploads/a612384a-0217-4737-be02-da6373513052.png" 
-              alt="Granville Farms Inc. Logo" 
-              className="h-12 md:h-14 w-auto"
-            />
+            Granville Farms Inc.
           </Link>
 
           {/* Mobile menu button */}

@@ -9,16 +9,12 @@ const Footer = () => {
   return (
     <footer className="bg-gf-dark text-white">
       <div className="container mx-auto px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Company Info */}
           <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             <div>
               <Link to="/" aria-label="Granville Farms Inc.">
-                <img 
-                  src="/lovable-uploads/a612384a-0217-4737-be02-da6373513052.png" 
-                  alt="Granville Farms Inc. Logo" 
-                  className="h-12 w-auto filter brightness-0 invert"
-                />
+                <h2 className="text-2xl font-bold text-white">Granville Farms Inc.</h2>
               </Link>
             </div>
             <p className="text-gray-300 pr-4">
@@ -81,10 +77,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services & Emergency Notice */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <h4 className="text-xl font-semibold mb-6">Our Services</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-8">
               <li>
                 <Link to="/services#transportation" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
                   <ChevronRight size={14} className="text-gf-green" />
@@ -116,31 +112,11 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-
-          {/* Service Hours */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <h4 className="text-xl font-semibold mb-6">Service Hours</h4>
-            <ul className="space-y-3">
-              <li className="flex justify-between">
-                <span className="text-gray-300">Monday - Friday:</span>
-                <span className="text-white">7:00 AM - 5:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-gray-300">Saturday:</span>
-                <span className="text-white">By Appointment</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-gray-300">Sunday:</span>
-                <span className="text-white">Closed</span>
-              </li>
-              <li className="mt-6">
-                <div className="bg-gf-green/10 border border-gf-green/20 rounded-md p-4 text-gray-300">
-                  <p className="font-medium text-white mb-1">Emergency Services Available 24/7</p>
-                  <p>Call us anytime for emergency biosolids management services.</p>
-                </div>
-              </li>
-            </ul>
+            
+            <div className="bg-gf-green/10 border border-gf-green/20 rounded-md p-4 text-gray-300">
+              <p className="font-medium text-white mb-1">Emergency Services Available 24/7</p>
+              <p>Call us anytime for emergency biosolids management services.</p>
+            </div>
           </div>
         </div>
 
