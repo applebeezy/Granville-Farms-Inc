@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Truck, Droplet, Leaf, FileCheck, Waves, MapPin, Building } from 'lucide-react';
+import { ArrowRight, Truck, Droplet, Leaf, FileCheck, Waves, MapPin, Building, Phone, Mail } from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
@@ -102,8 +102,7 @@ const Index = () => {
                 description={service.description}
                 icon={service.icon}
                 link={service.link}
-                className="animate-fade-in-up"
-                style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+                className={`animate-fade-in-up delay-${index * 100}`}
               />
             ))}
           </div>
@@ -131,7 +130,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 animate-fade-in-up delay-100">
               <div className="w-14 h-14 flex items-center justify-center bg-gf-green/20 text-gf-green rounded-lg mb-5">
                 <Waves size={24} />
               </div>
@@ -141,7 +140,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 animate-fade-in-up delay-200">
               <div className="w-14 h-14 flex items-center justify-center bg-gf-green/20 text-gf-green rounded-lg mb-5">
                 <Building size={24} />
               </div>
@@ -151,7 +150,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 animate-fade-in-up delay-300">
               <div className="w-14 h-14 flex items-center justify-center bg-gf-green/20 text-gf-green rounded-lg mb-5">
                 <MapPin size={24} />
               </div>
