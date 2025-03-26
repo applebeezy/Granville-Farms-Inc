@@ -68,7 +68,7 @@ const Projects = () => {
           title="Our Past Projects"
           description="Explore some of our successful biosolids management projects across North Carolina."
           buttonText="Contact Us"
-          buttonLink="/team"
+          buttonLink="mailto:granvillefarmsinc@gmail.com"
           imageUrl="https://images.unsplash.com/photo-1465421108887-01a9197c51e7?auto=format&fit=crop&w=2000&h=1000&q=80" // Updated project hero image (agricultural/farm equipment)
           overlayOpacity="medium"
         />
@@ -182,10 +182,10 @@ const Projects = () => {
               />
             </div>
             <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
-              <Link to="/team" className="flex items-center gap-2">
+              <a href="mailto:granvillefarmsinc@gmail.com" className="flex items-center gap-2">
                 Contact Our Team
                 <ArrowRight size={16} />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

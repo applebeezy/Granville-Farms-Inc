@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
@@ -66,7 +65,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png" 
               alt="Granville Farms Logo" 
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
           </button>
 

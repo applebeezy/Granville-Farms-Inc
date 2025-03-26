@@ -130,7 +130,7 @@ const Services = () => {
           title="Our Services"
           description="Comprehensive biosolids management solutions for municipalities and industries across North Carolina."
           buttonText="Contact Us"
-          buttonLink="/team"
+          buttonLink="mailto:granvillefarmsinc@gmail.com"
           imageUrl="https://miro.medium.com/v2/resize:fit:1358/1*2k_du5dJGlxRv20sUgGgVQ.jpeg"
           overlayOpacity="medium"
         />
@@ -186,10 +186,10 @@ const Services = () => {
               />
             </div>
             <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
-              <Link to="/team" className="flex items-center gap-2">
+              <a href="mailto:granvillefarmsinc@gmail.com" className="flex items-center gap-2">
                 Contact Our Team
                 <ArrowRight size={16} />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
