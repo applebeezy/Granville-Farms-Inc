@@ -87,10 +87,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services & Emergency Notice */}
+          {/* Services */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <h4 className="text-xl font-semibold mb-6">Our Services</h4>
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-3">
               <li>
                 <Link to="/services#transportation" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
                   <ChevronRight size={14} className="text-gf-green" />
@@ -128,11 +128,6 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-            
-            <div className="bg-gf-green/10 border border-gf-green/20 rounded-md p-4 text-gray-300">
-              <p className="font-medium text-white mb-1">Emergency Services Available 24/7</p>
-              <p>Call us anytime for emergency biosolids management services.</p>
-            </div>
           </div>
         </div>
 

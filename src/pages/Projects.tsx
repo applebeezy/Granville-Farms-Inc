@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'City of Raleigh Biosolids Management',
       client: 'City of Raleigh',
       description: 'Managing 20,000 tons of Class B biosolids per year for the City of Raleigh, ensuring compliant and sustainable handling of municipal waste.',
-      imageUrl: 'https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1578761716358-e40e45271896?auto=format&fit=crop&w=800&q=80' // Raleigh, NC skyline
     },
     {
       title: 'Rocky Mount Land Application',
@@ -30,36 +30,31 @@ const Projects = () => {
       title: 'Consolidated Fertilizer Management',
       client: 'Consolidated Fertilizer Inc.',
       description: 'Land application of 20 million gallons of Class A liquid biosolids per year, supporting sustainable agriculture practices.',
-      imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1586771107445-d3ca888129ce?auto=format&fit=crop&w=800&q=80' // Truck spreading fertilizer
     },
     {
       title: 'Town of Cary Biosolids Marketing',
       client: 'Town of Cary',
       description: 'Marketing and management of Class A biosolid pellets, creating valuable products from waste materials.',
-      imageUrl: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=800&q=80'
+      imageUrl: 'https://images.unsplash.com/photo-1558400338-11d2b63826f8?auto=format&fit=crop&w=800&q=80' // Cary, NC area
     }
   ];
 
   const additionalProjects = [
     {
-      title: 'Durham Water Reclamation Facility',
-      client: 'City of Durham',
-      description: "Providing transportation and land application services for the Durham Water Reclamation Facility's biosolids program."
+      title: 'City of Wilson Biosolids Management',
+      client: 'City of Wilson',
+      description: "Comprehensive biosolids management services for the City of Wilson, including transportation and land application solutions."
     },
     {
-      title: 'Greensboro Dewatering Project',
-      client: 'City of Greensboro',
-      description: "Implementation of mobile dewatering solutions for the City of Greensboro's wastewater treatment facilities."
+      title: 'Town of Henderson Wastewater Treatment',
+      client: 'Town of Henderson',
+      description: "Wastewater treatment facilities residual management services for the Town of Henderson."
     },
     {
-      title: 'Wilson County Lagoon Cleaning',
-      client: 'Wilson County',
-      description: 'Comprehensive cleaning and maintenance of wastewater treatment lagoons for Wilson County utilities.'
-    },
-    {
-      title: 'Harnett County Agricultural Applications',
-      client: 'Harnett County',
-      description: 'Land application of biosolids to enhance agricultural soil fertility across Harnett County farmlands.'
+      title: 'Town of Clinton Class B Biosolid Management',
+      client: 'Town of Clinton',
+      description: 'Complete Class B biosolid management solutions, ensuring regulatory compliance and environmental sustainability.'
     }
   ];
 
@@ -74,7 +69,7 @@ const Projects = () => {
           description="Explore some of our successful biosolids management projects across North Carolina."
           buttonText="Contact Us"
           buttonLink="/team"
-          imageUrl="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=2000&h=1000&q=80"
+          imageUrl="https://images.unsplash.com/photo-1611001462697-286ad571393c?auto=format&fit=crop&w=2000&h=1000&q=80" // Land application/agricultural field truck
           overlayOpacity="medium"
         />
       </section>
@@ -179,6 +174,13 @@ const Projects = () => {
               Contact our team today to learn how Granville Farms can provide tailored solutions for your biosolids 
               and wastewater challenges. We're ready to help you implement sustainable and compliant management practices.
             </p>
+            <div className="mb-8">
+              <img 
+                src="https://images.unsplash.com/photo-1560439514-4e9645039924?auto=format&fit=crop&w=1200&q=80" 
+                alt="Professional handshake" 
+                className="rounded-lg w-full max-w-2xl mx-auto shadow-lg"
+              />
+            </div>
             <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
               <Link to="/team" className="flex items-center gap-2">
                 Contact Our Team

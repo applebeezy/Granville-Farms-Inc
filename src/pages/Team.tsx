@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '@/components/Hero';
@@ -40,7 +41,7 @@ const Team = () => {
           description="Family-owned and operated since 1988, Granville Farms Inc. is led by brothers who have dedicated their careers to sustainable biosolids management."
           buttonText="Contact Us"
           buttonLink="#team"
-          imageUrl="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=2000&h=1000&q=80"
+          imageUrl="https://images.unsplash.com/photo-1624461776970-ffac394f5cd9?auto=format&fit=crop&w=2000&h=1000&q=80" // Blue collar workers in field
           overlayOpacity="medium"
         />
       </section>
