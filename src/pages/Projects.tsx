@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'City of Raleigh Biosolids Management',
       client: 'City of Raleigh',
       description: 'Managing 20,000 tons of Class B biosolids per year for the City of Raleigh, ensuring compliant and sustainable handling of municipal waste.',
-      imageUrl: '/lovable-uploads/b4eae7e9-d969-4230-9e60-1958261f3d40.png' // Updated Raleigh image
+      imageUrl: 'https://www.usatipps.de/wp-content/uploads/2021/05/raleigh-north-carolina.jpg' // Updated Raleigh image
     },
     {
       title: 'Rocky Mount Land Application',
@@ -30,13 +30,13 @@ const Projects = () => {
       title: 'Consolidated Fertilizer Management',
       client: 'Consolidated Fertilizer Inc.',
       description: 'Land application of 20 million gallons of Class A liquid biosolids per year, supporting sustainable agriculture practices.',
-      imageUrl: '/lovable-uploads/50a0d130-52de-46f0-8729-000459669231.png' // Updated Consolidated Fertilizer image
+      imageUrl: 'https://images.pexels.com/photos/6216870/pexels-photo-6216870.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' // Updated Consolidated Fertilizer image
     },
     {
       title: 'Town of Cary Biosolids Marketing',
       client: 'Town of Cary',
       description: 'Marketing and management of Class A biosolid pellets, creating valuable products from waste materials.',
-      imageUrl: '/lovable-uploads/22b76189-3e57-4ad7-86d6-b734eaebeaa5.png' // Updated Cary image
+      imageUrl: 'https://cdn.homeandmoney.com/wp-content/uploads/2023/02/17164547/cary-nc-shutterstock_1491350357-scaled.jpg' // Updated Cary image
     }
   ];
 
@@ -176,7 +176,7 @@ const Projects = () => {
             </p>
             <div className="mb-8">
               <img 
-                src="https://images.unsplash.com/photo-1560439514-4e9645039924?auto=format&fit=crop&w=1200&q=80" 
+                src="https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2018/11/2102013-7210.jpg" 
                 alt="Professional handshake" 
                 className="rounded-lg w-full max-w-2xl mx-auto shadow-lg"
               />

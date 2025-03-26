@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Hero from '@/components/Hero';
@@ -130,7 +131,7 @@ const Services = () => {
           description="Comprehensive biosolids management solutions for municipalities and industries across North Carolina."
           buttonText="Contact Us"
           buttonLink="/team"
-          imageUrl="https://images.unsplash.com/photo-1593378026483-cf1291fada7f?auto=format&fit=crop&w=2000&h=1000&q=80"
+          imageUrl="https://miro.medium.com/v2/resize:fit:1358/1*2k_du5dJGlxRv20sUgGgVQ.jpeg"
           overlayOpacity="medium"
         />
       </section>
@@ -177,6 +178,13 @@ const Services = () => {
               Contact our team today to learn how Granville Farms can provide tailored solutions for your biosolids 
               and wastewater challenges. We're ready to help you implement sustainable and compliant management practices.
             </p>
+            <div className="mb-8">
+              <img 
+                src="https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2018/11/2102013-7210.jpg" 
+                alt="Professional handshake" 
+                className="rounded-lg w-full max-w-2xl mx-auto shadow-lg"
+              />
+            </div>
             <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
               <Link to="/team" className="flex items-center gap-2">
                 Contact Our Team
