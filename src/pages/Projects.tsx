@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'City of Raleigh Biosolids Management',
       client: 'City of Raleigh',
       description: 'Managing 20,000 tons of Class B biosolids per year for the City of Raleigh, ensuring compliant and sustainable handling of municipal waste.',
-      imageUrl: 'https://images.unsplash.com/photo-1578761716358-e40e45271896?auto=format&fit=crop&w=800&q=80' // Raleigh, NC skyline
+      imageUrl: '/lovable-uploads/b4eae7e9-d969-4230-9e60-1958261f3d40.png' // Updated Raleigh image
     },
     {
       title: 'Rocky Mount Land Application',
@@ -30,13 +30,13 @@ const Projects = () => {
       title: 'Consolidated Fertilizer Management',
       client: 'Consolidated Fertilizer Inc.',
       description: 'Land application of 20 million gallons of Class A liquid biosolids per year, supporting sustainable agriculture practices.',
-      imageUrl: 'https://images.unsplash.com/photo-1586771107445-d3ca888129ce?auto=format&fit=crop&w=800&q=80' // Truck spreading fertilizer
+      imageUrl: '/lovable-uploads/50a0d130-52de-46f0-8729-000459669231.png' // Updated Consolidated Fertilizer image
     },
     {
       title: 'Town of Cary Biosolids Marketing',
       client: 'Town of Cary',
       description: 'Marketing and management of Class A biosolid pellets, creating valuable products from waste materials.',
-      imageUrl: 'https://images.unsplash.com/photo-1558400338-11d2b63826f8?auto=format&fit=crop&w=800&q=80' // Cary, NC area
+      imageUrl: '/lovable-uploads/22b76189-3e57-4ad7-86d6-b734eaebeaa5.png' // Updated Cary image
     }
   ];
 
@@ -69,7 +69,7 @@ const Projects = () => {
           description="Explore some of our successful biosolids management projects across North Carolina."
           buttonText="Contact Us"
           buttonLink="/team"
-          imageUrl="https://images.unsplash.com/photo-1611001462697-286ad571393c?auto=format&fit=crop&w=2000&h=1000&q=80" // Land application/agricultural field truck
+          imageUrl="https://images.unsplash.com/photo-1465421108887-01a9197c51e7?auto=format&fit=crop&w=2000&h=1000&q=80" // Updated project hero image (agricultural/farm equipment)
           overlayOpacity="medium"
         />
       </section>
