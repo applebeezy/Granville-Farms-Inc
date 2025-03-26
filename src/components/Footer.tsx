@@ -14,7 +14,11 @@ const Footer = () => {
           <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             <div>
               <Link to="/" aria-label="Granville Farms Inc.">
-                <h2 className="text-2xl font-bold text-white">Granville Farms Inc.</h2>
+                <img 
+                  src="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png" 
+                  alt="Granville Farms Logo" 
+                  className="h-12 w-auto"
+                />
               </Link>
             </div>
             <p className="text-gray-300 pr-4">
@@ -115,6 +119,12 @@ const Footer = () => {
                 <Link to="/services#tank" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
                   <ChevronRight size={14} className="text-gf-green" />
                   Tank Cleaning
+                </Link>
+              </li>
+              <li>
+                <Link to="/services#application" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                  <ChevronRight size={14} className="text-gf-green" />
+                  Land Application
                 </Link>
               </li>
             </ul>

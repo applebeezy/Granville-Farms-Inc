@@ -44,7 +44,7 @@ const About = () => {
         <Hero 
           title="About Granville Farms"
           description="North Carolina's trusted biosolids management partner since 1988."
-          imageUrl="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=2000&h=800&q=80"
+          imageUrl="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?auto=format&fit=crop&w=2000&h=800&q=80"
           size="medium"
           overlayOpacity="medium"
         />
@@ -88,13 +88,13 @@ const About = () => {
               <div className="md:w-1/2 animate-fade-in-right">
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format&fit=crop&w=800&q=80" 
-                    alt="Granville Farms Field" 
+                    src="https://images.unsplash.com/photo-1613574143031-f74568e146ed?auto=format&fit=crop&w=800&q=80" 
+                    alt="Biosolids Management" 
                     className="rounded-xl shadow-lg"
                   />
                   <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-xl shadow-lg">
                     <img 
-                      src="/lovable-uploads/a612384a-0217-4737-be02-da6373513052.png" 
+                      src="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png" 
                       alt="Granville Farms Logo" 
                       className="h-12 w-auto"
                     />

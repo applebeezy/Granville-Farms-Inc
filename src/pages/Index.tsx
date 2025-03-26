@@ -55,7 +55,7 @@ const Index = () => {
           description="Granville Farms Inc. is North Carolina's leading provider of sustainable biosolids management and wastewater treatment solutions."
           buttonText="Explore Our Services"
           buttonLink="/services"
-          imageUrl="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=2000&h=1000&q=80"
+          imageUrl="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&h=1000&q=80"
           overlayOpacity="medium"
         />
       </section>
@@ -182,26 +182,104 @@ const Index = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail size={18} className="text-gf-green" />
-                    <a href="mailto:info@granvillefarmsinc.com" className="text-gray-700 hover:text-gf-green transition-colors">
-                      info@granvillefarmsinc.com
+                    <a href="mailto:granvillefarmsinc@gmail.com" className="text-gray-700 hover:text-gf-green transition-colors">
+                      granvillefarmsinc@gmail.com
                     </a>
                   </div>
                 </div>
                 <Button asChild className="mt-6 bg-gf-green hover:bg-gf-green/90 text-white border-none">
-                  <Link to="/team" className="flex items-center gap-2">
+                  <a href="mailto:granvillefarmsinc@gmail.com" className="flex items-center gap-2">
                     Contact Our Team
                     <ArrowRight size={16} />
-                  </Link>
+                  </a>
                 </Button>
               </div>
               <div className="md:w-1/2 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format&fit=crop&w=800&h=600&q=80" 
-                  alt="Granville Farms Field" 
+                  src="https://images.unsplash.com/photo-1541962032775-a55a8f2e544e?auto=format&fit=crop&w=800&h=600&q=80" 
+                  alt="Biosolids Management" 
                   className="h-full w-full object-cover"
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* All Services List */}
+      <section className="py-16 md:py-24 bg-gf-light">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in-up">
+            <span className="inline-block px-3 py-1 text-sm font-medium bg-gf-green text-white rounded-md mb-4">Complete Services</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Full Range of Services</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Explore our complete portfolio of biosolids management and wastewater treatment services.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <ServiceCard
+              id="transportation"
+              title="Biosolids Transportation"
+              description="Safe and efficient transportation of biosolids material with our specialized fleet of vehicles."
+              icon={<Truck size={24} />}
+              link="/services#transportation"
+              className="animate-fade-in-up"
+            />
+            
+            <ServiceCard
+              id="dewatering"
+              title="Dewatering Solutions"
+              description="Advanced dewatering technologies to efficiently separate water from solids."
+              icon={<Droplet size={24} />}
+              link="/services#dewatering"
+              className="animate-fade-in-up delay-100"
+            />
+            
+            <ServiceCard
+              id="application"
+              title="Land Application"
+              description="Environmentally responsible application of biosolids to enhance soil fertility."
+              icon={<Leaf size={24} />}
+              link="/services#application"
+              className="animate-fade-in-up delay-200"
+            />
+            
+            <ServiceCard
+              id="permit"
+              title="Permit Management"
+              description="Expert management of Class A and Class B permits to ensure regulatory compliance."
+              icon={<FileCheck size={24} />}
+              link="/services#permit"
+              className="animate-fade-in-up delay-300"
+            />
+            
+            <ServiceCard
+              id="lagoon"
+              title="Lagoon Cleaning"
+              description="Professional cleaning and maintenance of wastewater lagoons to ensure optimal performance."
+              icon={<Waves size={24} />}
+              link="/services#lagoon"
+              className="animate-fade-in-up delay-400"
+            />
+            
+            <ServiceCard
+              id="tank"
+              title="Tank Cleaning"
+              description="Specialized cleaning services for digesters and tanks in wastewater treatment facilities."
+              icon={<Building size={24} />}
+              link="/services#tank"
+              className="animate-fade-in-up delay-500"
+            />
+          </div>
+          
+          <div className="mt-12 text-center animate-fade-in-up">
+            <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
+              <Link to="/services" className="flex items-center gap-2">
+                Learn More About Our Services
+                <ArrowRight size={16} />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

@@ -64,7 +64,7 @@ const Navbar = () => {
             aria-label="Granville Farms Inc."
           >
             <img 
-              src="/lovable-uploads/a612384a-0217-4737-be02-da6373513052.png" 
+              src="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png" 
               alt="Granville Farms Logo" 
               className="h-12 w-auto"
             />
