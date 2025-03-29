@@ -41,8 +41,8 @@ const Team = () => {
           description="Family-owned and operated since 1988, Granville Farms Inc. is led by brothers who have dedicated their careers to sustainable biosolids management."
           buttonText="Contact Us"
           buttonLink="#team"
-          imageUrl="https://images.unsplash.com/photo-1624461776970-ffac394f5cd9?auto=format&fit=crop&w=2000&h=1000&q=80" // Blue collar workers in field
-          overlayOpacity="medium"
+          imageUrl="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png"
+          overlayOpacity="dark" // Using dark overlay to ensure text readability against the logo
         />
       </section>
       
@@ -91,9 +91,16 @@ const Team = () => {
                 <span className="text-2xl font-bold">01</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Environmental Responsibility</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-4">
                 We are committed to sustainable practices that protect our environment and conserve natural resources for future generations.
               </p>
+              <div className="w-full h-48 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?auto=format&fit=crop&q=80&w=800&h=600" 
+                  alt="Environmental Responsibility" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             
             <div className="bg-white rounded-xl p-8 shadow-sm animate-fade-in-up delay-200">
@@ -101,9 +108,16 @@ const Team = () => {
                 <span className="text-2xl font-bold">02</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Regulatory Excellence</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-4">
                 We maintain the highest standards of compliance with all local, state, and federal regulations governing biosolids management.
               </p>
+              <div className="w-full h-48 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800&h=600" 
+                  alt="Regulatory Excellence" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             
             <div className="bg-white rounded-xl p-8 shadow-sm animate-fade-in-up delay-300">
@@ -111,9 +125,16 @@ const Team = () => {
                 <span className="text-2xl font-bold">03</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Client Partnership</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 mb-4">
                 We work closely with our clients to understand their unique needs and develop tailored solutions that meet their specific goals.
               </p>
+              <div className="w-full h-48 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800&h=600" 
+                  alt="Client Partnership" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Projects = () => {
       title: 'City of Raleigh Biosolids Management',
       client: 'City of Raleigh',
       description: 'Managing 20,000 tons of Class B biosolids per year for the City of Raleigh, ensuring compliant and sustainable handling of municipal waste.',
-      imageUrl: 'https://www.usatipps.de/wp-content/uploads/2021/05/raleigh-north-carolina.jpg' // Updated Raleigh image
+      imageUrl: 'https://www.usatipps.de/wp-content/uploads/2021/05/raleigh-north-carolina.jpg'
     },
     {
       title: 'Rocky Mount Land Application',
@@ -30,13 +30,13 @@ const Projects = () => {
       title: 'Consolidated Fertilizer Management',
       client: 'Consolidated Fertilizer Inc.',
       description: 'Land application of 20 million gallons of Class A liquid biosolids per year, supporting sustainable agriculture practices.',
-      imageUrl: 'https://images.pexels.com/photos/6216870/pexels-photo-6216870.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' // Updated Consolidated Fertilizer image
+      imageUrl: 'https://images.pexels.com/photos/6216870/pexels-photo-6216870.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'
     },
     {
       title: 'Town of Cary Biosolids Marketing',
       client: 'Town of Cary',
       description: 'Marketing and management of Class A biosolid pellets, creating valuable products from waste materials.',
-      imageUrl: 'https://cdn.homeandmoney.com/wp-content/uploads/2023/02/17164547/cary-nc-shutterstock_1491350357-scaled.jpg' // Updated Cary image
+      imageUrl: 'https://cdn.homeandmoney.com/wp-content/uploads/2023/02/17164547/cary-nc-shutterstock_1491350357-scaled.jpg'
     }
   ];
 
@@ -44,17 +44,20 @@ const Projects = () => {
     {
       title: 'City of Wilson Biosolids Management',
       client: 'City of Wilson',
-      description: "Comprehensive biosolids management services for the City of Wilson, including transportation and land application solutions."
+      description: "Comprehensive biosolids management services for the City of Wilson, including transportation and land application solutions.",
+      imageUrl: "https://discoverwilson.com/wp-content/uploads/2021/01/home-masthead1-1800x863-c-default.jpg"
     },
     {
       title: 'Town of Henderson Wastewater Treatment',
       client: 'Town of Henderson',
-      description: "Wastewater treatment facilities residual management services for the Town of Henderson."
+      description: "Wastewater treatment facilities residual management services for the Town of Henderson.",
+      imageUrl: "https://www.gardendestinations.com/wp-content/uploads/2019/07/Downtown-00249-web-Sam-Dean-1170x603.jpg"
     },
     {
       title: 'Town of Clinton Class B Biosolid Management',
       client: 'Town of Clinton',
-      description: 'Complete Class B biosolid management solutions, ensuring regulatory compliance and environmental sustainability.'
+      description: 'Complete Class B biosolid management solutions, ensuring regulatory compliance and environmental sustainability.',
+      imageUrl: "https://cityofclintonnc.com/ImageRepository/Document?documentID=40"
     }
   ];
 
@@ -69,7 +72,7 @@ const Projects = () => {
           description="Explore some of our successful biosolids management projects across North Carolina."
           buttonText="Contact Us"
           buttonLink="mailto:granvillefarmsinc@gmail.com"
-          imageUrl="https://images.unsplash.com/photo-1465421108887-01a9197c51e7?auto=format&fit=crop&w=2000&h=1000&q=80" // Updated project hero image (agricultural/farm equipment)
+          imageUrl="https://i0.wp.com/enbiorganic.com/wp-content/uploads/2021/12/shutterstock_2039933306-2.jpg?fit=600%2C373&ssl=1"
           overlayOpacity="medium"
         />
       </section>
@@ -152,12 +155,21 @@ const Projects = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {additionalProjects.map((project, index) => (
-              <div key={project.title} className="border-b border-gray-200 pb-4 mb-4 last:border-b-0 last:mb-0 last:pb-0 animate-fade-in-up">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-sm text-gf-green mb-2">{project.client}</p>
-                <p className="text-gray-600">{project.description}</p>
+              <div key={project.title} className="border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-in-up">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={project.imageUrl} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <p className="text-sm text-gf-green mb-2">{project.client}</p>
+                  <p className="text-gray-600">{project.description}</p>
+                </div>
               </div>
             ))}
           </div>
