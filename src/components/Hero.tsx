@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({
   className,
   overlayOpacity = 'medium',
   size = 'large',
-  alignment = 'center', // Changed default to 'center'
+  alignment = 'center',
 }) => {
   // Calculate height based on size
   const heightClasses = {
@@ -39,11 +39,11 @@ const Hero: React.FC<HeroProps> = ({
     large: 'h-[70vh] md:h-[80vh]',
   };
 
-  // Calculate overlay opacity
+  // Calculate overlay opacity - making dark even darker
   const overlayClasses = {
     light: 'bg-black/30',
-    medium: 'bg-black/50',
-    dark: 'bg-black/70',
+    medium: 'bg-black/60',
+    dark: 'bg-black/80',
   };
 
   // Calculate text alignment

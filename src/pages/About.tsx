@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -50,56 +49,38 @@ const About = () => {
         />
       </section>
       
-      {/* Company Overview */}
+      {/* Company Overview - Removed right side content */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-10 items-center">
-              <div className="md:w-1/2 animate-fade-in-left">
-                <span className="inline-block px-3 py-1 text-sm font-medium bg-gf-green text-white rounded-md mb-4">Our Story</span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">A Family Legacy of Excellence</h2>
-                <p className="text-gray-700 mb-4">
-                  Founded in 1988 by brothers Andy and Jason Smith, Granville Farms Inc. has grown from a small 
-                  family operation to North Carolina's leading biosolids management company. For over three decades, 
-                  we have provided innovative and environmentally responsible solutions for municipalities, wastewater 
-                  treatment facilities, and industrial clients throughout the state.
-                </p>
-                <p className="text-gray-700 mb-6">
-                  Based in Oxford, NC, our company combines deep local knowledge with industry-leading expertise to 
-                  deliver exceptional service to our clients. Our commitment to environmental stewardship, regulatory 
-                  compliance, and sustainable practices has established us as a trusted partner in the biosolids 
-                  management industry.
-                </p>
-                <div className="flex space-x-4">
-                  <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
-                    <Link to="/team" className="flex items-center gap-2">
-                      Meet Our Team
-                      <ArrowRight size={16} />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" className="border-gf-green text-gf-green hover:bg-gf-green hover:text-white">
-                    <Link to="/projects" className="flex items-center gap-2">
-                      View Projects
-                      <ArrowRight size={16} />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-              <div className="md:w-1/2 animate-fade-in-right">
-                <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1613574143031-f74568e146ed?auto=format&fit=crop&w=800&q=80" 
-                    alt="Biosolids Management" 
-                    className="rounded-xl shadow-lg"
-                  />
-                  <div className="absolute -bottom-5 -left-5 bg-white p-4 rounded-xl shadow-lg">
-                    <img 
-                      src="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png" 
-                      alt="Granville Farms Logo" 
-                      className="h-12 w-auto"
-                    />
-                  </div>
-                </div>
+            <div className="animate-fade-in-left">
+              <span className="inline-block px-3 py-1 text-sm font-medium bg-gf-green text-white rounded-md mb-4">Our Story</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">A Family Legacy of Excellence</h2>
+              <p className="text-gray-700 mb-4">
+                Founded in 1988 by brothers Andy and Jason Smith, Granville Farms Inc. has grown from a small 
+                family operation to North Carolina's leading biosolids management company. For over three decades, 
+                we have provided innovative and environmentally responsible solutions for municipalities, wastewater 
+                treatment facilities, and industrial clients throughout the state.
+              </p>
+              <p className="text-gray-700 mb-6">
+                Based in Oxford, NC, our company combines deep local knowledge with industry-leading expertise to 
+                deliver exceptional service to our clients. Our commitment to environmental stewardship, regulatory 
+                compliance, and sustainable practices has established us as a trusted partner in the biosolids 
+                management industry.
+              </p>
+              <div className="flex space-x-4 justify-center">
+                <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
+                  <Link to="/team" className="flex items-center gap-2">
+                    Meet Our Team
+                    <ArrowRight size={16} />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="border-gf-green text-gf-green hover:bg-gf-green hover:text-white">
+                  <Link to="/projects" className="flex items-center gap-2">
+                    View Projects
+                    <ArrowRight size={16} />
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>

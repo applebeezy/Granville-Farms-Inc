@@ -34,7 +34,7 @@ const Team = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section - Using very dark overlay to ensure text readability */}
       <section className="pt-16">
         <Hero 
           title="Meet Our Leadership Team"
@@ -42,8 +42,8 @@ const Team = () => {
           buttonText="Contact Us"
           buttonLink="#team"
           imageUrl="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png"
-          overlayOpacity="dark" // Using dark overlay to ensure text readability against the logo
-          alignment="center" // Explicitly setting centered alignment
+          overlayOpacity="dark" // Using the darkest overlay
+          alignment="center"
         />
       </section>
       

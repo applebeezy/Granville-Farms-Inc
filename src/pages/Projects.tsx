@@ -65,16 +65,16 @@ const Projects = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section - Updated image URL */}
       <section className="pt-16">
         <Hero 
           title="Our Past Projects"
           description="Explore some of our successful biosolids management projects across North Carolina."
           buttonText="Contact Us"
           buttonLink="mailto:granvillefarmsinc@gmail.com"
-          imageUrl="https://i0.wp.com/enbiorganic.com/wp-content/uploads/2021/12/shutterstock_2039933306-2.jpg?fit=600%2C373&ssl=1"
-          overlayOpacity="dark" // Using darker overlay to improve readability
-          alignment="center" // Explicitly setting centered alignment
+          imageUrl="https://cdn5.balboacapital.com/uploads/2022/06/03145755/food-grade-tanker.jpg"
+          overlayOpacity="dark"
+          alignment="center"
         />
       </section>
       
@@ -187,13 +187,6 @@ const Projects = () => {
               Contact our team today to learn how Granville Farms can provide tailored solutions for your biosolids 
               and wastewater challenges. We're ready to help you implement sustainable and compliant management practices.
             </p>
-            <div className="mb-8">
-              <img 
-                src="https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2018/11/2102013-7210.jpg" 
-                alt="Professional handshake" 
-                className="rounded-lg w-full max-w-2xl mx-auto shadow-lg"
-              />
-            </div>
             <Button asChild className="bg-gf-green hover:bg-gf-green/90 text-white border-none">
               <a href="mailto:granvillefarmsinc@gmail.com" className="flex items-center gap-2">
                 Contact Our Team
