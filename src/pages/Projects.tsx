@@ -73,7 +73,8 @@ const Projects = () => {
           buttonText="Contact Us"
           buttonLink="mailto:granvillefarmsinc@gmail.com"
           imageUrl="https://i0.wp.com/enbiorganic.com/wp-content/uploads/2021/12/shutterstock_2039933306-2.jpg?fit=600%2C373&ssl=1"
-          overlayOpacity="medium"
+          overlayOpacity="dark" // Using darker overlay to improve readability
+          alignment="center" // Explicitly setting centered alignment
         />
       </section>
       
@@ -107,7 +108,7 @@ const Projects = () => {
       <section className="py-16 md:py-24 bg-gf-light">
         <div className="container mx-auto px-6 md:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-full animate-fade-in-up">
+            <div className="lg:w-full animate-fade-in-up text-center">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-gf-green text-white rounded-md mb-4">Case Study</span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">City of Raleigh Partnership</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -117,7 +118,7 @@ const Projects = () => {
               </p>
               
               <h3 className="text-xl font-semibold mb-4">Project Highlights:</h3>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 max-w-2xl mx-auto text-left">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={22} className="text-gf-green shrink-0 mt-1" />
                   <span className="text-gray-700">Management of 20,000 tons of Class B biosolids annually</span>

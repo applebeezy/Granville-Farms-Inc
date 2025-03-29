@@ -133,6 +133,7 @@ const Services = () => {
           buttonLink="mailto:granvillefarmsinc@gmail.com"
           imageUrl="https://miro.medium.com/v2/resize:fit:1358/1*2k_du5dJGlxRv20sUgGgVQ.jpeg"
           overlayOpacity="medium"
+          alignment="center" // Explicitly setting centered alignment
         />
       </section>
       

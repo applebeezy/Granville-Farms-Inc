@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({
   className,
   overlayOpacity = 'medium',
   size = 'large',
-  alignment = 'center',
+  alignment = 'center', // Changed default to 'center'
 }) => {
   // Calculate height based on size
   const heightClasses = {

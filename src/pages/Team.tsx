@@ -43,6 +43,7 @@ const Team = () => {
           buttonLink="#team"
           imageUrl="/lovable-uploads/f251d7eb-28d6-4c89-9cd6-4f17567f0851.png"
           overlayOpacity="dark" // Using dark overlay to ensure text readability against the logo
+          alignment="center" // Explicitly setting centered alignment
         />
       </section>
       
@@ -130,7 +131,7 @@ const Team = () => {
               </p>
               <div className="w-full h-48 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800&h=600" 
+                  src="https://img.freepik.com/free-photo/close-up-men-shaking-hands_23-2148269335.jpg" 
                   alt="Client Partnership" 
                   className="w-full h-full object-cover"
                 />

@@ -57,6 +57,7 @@ const Index = () => {
           buttonLink="/services"
           imageUrl="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&h=1000&q=80"
           overlayOpacity="medium"
+          alignment="center" // Explicitly setting centered alignment
         />
       </section>
       
@@ -168,19 +169,19 @@ const Index = () => {
         <div className="container mx-auto px-6 md:px-8">
           <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden animate-scale-in">
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 p-8 md:p-10">
+              <div className="md:w-1/2 p-8 md:p-10 text-center md:text-left">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Discuss Your Biosolids Management Needs?</h2>
                 <p className="text-gray-600 mb-6">
                   Contact our team today to learn how Granville Farms can provide tailored solutions for your biosolids and wastewater challenges.
                 </p>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 justify-center md:justify-start">
                     <Phone size={18} className="text-gf-green" />
                     <a href="tel:+19196908000" className="text-gray-700 hover:text-gf-green transition-colors">
                       (919) 690-8000
                     </a>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 justify-center md:justify-start">
                     <Mail size={18} className="text-gf-green" />
                     <a href="mailto:granvillefarmsinc@gmail.com" className="text-gray-700 hover:text-gf-green transition-colors">
                       granvillefarmsinc@gmail.com
@@ -196,7 +197,7 @@ const Index = () => {
               </div>
               <div className="md:w-1/2 relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1541962032775-a55a8f2e544e?auto=format&fit=crop&w=800&h=600&q=80" 
+                  src="https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2018/11/2102013-7210.jpg" 
                   alt="Biosolids Management" 
                   className="h-full w-full object-cover"
                 />
